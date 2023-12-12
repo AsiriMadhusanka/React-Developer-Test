@@ -2,7 +2,7 @@
 const fs = require('fs');
 
 exports.getAllUsers = (req, res) => {
-   fs.readFile('../React Developer Test/data/users.json', 'utf8', (err, data) => { //../data/users.json
+   fs.readFile('../backend/data/users.json', 'utf8', (err, data) => { //../data/users.json
        if (err) {
            console.error(err);
            return res.status(500).send('Server Error');
@@ -16,7 +16,7 @@ exports.getAllUsers = (req, res) => {
 
 exports.getUserById = (req, res) => {
   const id = req.params.id;
-  fs.readFile('../React Developer Test/data/users.json', 'utf8', (err, data) => {
+  fs.readFile('../backend/data/users.json', 'utf8', (err, data) => {
       if (err) {
           console.error(err);
           return res.status(500).send('Server Error');
