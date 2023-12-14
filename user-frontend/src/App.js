@@ -9,7 +9,7 @@ function App() {
 
   useEffect(() => {
     const fetchUsers = async () => {
-      const response = await axios.get('http://localhost:5000/users');
+      const response = await axios.get('https://react-developer-test-flame.vercel.app/users');
       setUsers(response.data.data);
     };
 
