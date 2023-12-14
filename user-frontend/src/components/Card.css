@@ -1,0 +1,23 @@
+Card.css
+
+.card-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Add margin between rows if needed */
+  }
+  
+  .card {
+    width: 30%; /* Adjust the width of each card to fit three cards in a row with some spacing */
+    padding: 10px;
+    border: 1px solid #ddd; /* Add borders or other styling as needed */
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  
