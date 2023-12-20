@@ -10,7 +10,7 @@ function UserInfo() {
 
  useEffect(() => {
  const fetchUser = async () => {
-   const response = await axios.get(`http://localhost:5000/users/${id}`);
+   const response = await axios.get(`http://react-developer-test.onrender.com/users/${id}`);
    setUser(response.data);
  };
 
